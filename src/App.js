@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+import React, {useState} from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Logo from './components/Logo';
 import Boton from './components/Boton';
-import Pagar from './components/Pagar';
+import Pagar from './vistas/Pagar';
 import Localizacion from './components/Mapa';
 import Carrusel from './components/carrusel/Carrusel';
-import Tabla from './components/Tabla';
+import Home from './vistas/Home';
+
+
 
 const App = () => {
     const [contador, setContador] = useState(0);
@@ -20,8 +22,7 @@ const App = () => {
     };
     
     return (
-        <Router>
-    <div className='App'>
+        <div className='App'>
         <Logo />
         <Carrusel />
         <Localizacion />
@@ -46,23 +47,12 @@ const App = () => {
     accion="emergencias"
     estilo={{ backgroundColor: "red" , color: "black", borderRadius: "15px", width: '300px', height: "50px", fontSize: "30px", fontWeight: "bold"}}
         /> 
-    </div> 
-            <Routes>
-                <Route path="/pagar" element={<Pagar />} />
-                <Route path="/" element={
-                    <div />
-                    
-                } />
-            </Routes>
-        </Router>
-    );
- };
-
+    <Routes>  {/* Usamos Routes para envolver las rutas */}
+      <Route path="/" element={<Home />} />  {/* Ruta principal que muestra el componente Home */}
+      <Route path="/pagar" element={<Pagar />} />  {/* Ruta para la vista de pagar */}
+    </Routes>
+  </div>
+  );
+}
 
 export default App;
-        
-        
-        
-        
-
-

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Boton = ({ accion, texto, estilo}) => {
@@ -6,13 +5,12 @@ const Boton = ({ accion, texto, estilo}) => {
 
 const handleClick = () => {
     if (accion === "pagar") {
-        requestIdleCallback(() => {
         navigate('/pagar');
-    });
-    } else if (accion === "emergencias") {
+    } else if (accion === "/emergencias") {
         alert("Llamada a emergencias. La ayuda esta en camino");
-
-    };
+    } else if (accion === "/volver") {
+        navigate(-1);
+    }
 };
 return(
    <button onClick={handleClick} style={estilo}>
