@@ -1,15 +1,20 @@
-import React from 'react';
-import Boton from '../components/Boton';
+import React from "react";
+import Boton from "../components/boton/Boton";
+import { useNavigate } from "react-router-dom";
+import "../components/boton/Boton.css";
 
 const Pagar = () => {
-    
-
+  const navigate = useNavigate();
+  const volverHome = () => {
+    navigate("/");
+  };
     return (
-        <div>
-            <h1> Compromisos </h1>
-            <Boton texto="Volver a Home" accion="volver" />
-        </div>
+      <Boton 
+      texto="Volver a Home" 
+      accion={volverHome} 
+      className="botonH" />
     );
-};
+  };
+
 
 export default Pagar;
