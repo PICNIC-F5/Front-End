@@ -41,7 +41,7 @@ const App = () => {
     accion="pagar"
     estilo={{ backgroundColor:"rgb(103, 180, 72)" , color: "black", borderRadius: "15px", width: '300px', height: "50px", fontSize: "30px", fontWeight: "bold"}}
         /> 
-
+                {/* EMERGENCIAS */}
          <Boton 
     texto="Emergencias"
     accion="emergencias"
