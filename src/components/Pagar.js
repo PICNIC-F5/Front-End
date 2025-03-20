@@ -7,7 +7,7 @@ const Pagar = () => {
 
     return (
         <div>
-            <h1> Compromisos </h1>
+            <h4>Compromisos </h4> {/* <h1> Compromisos </h1>  */}
             <Boton texto="Volver" accion={() => navigate("/")} />
         </div>
     );

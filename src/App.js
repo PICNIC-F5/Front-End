@@ -6,6 +6,7 @@ import Pagar from './components/Pagar';
 import Localizacion from './components/Mapa';
 import Carrusel from './components/carrusel/Carrusel';
 import Tabla from './components/Tabla';
+import './App.css';
 
 const App = () => {
     const [contador, setContador] = useState(0);
@@ -44,7 +45,19 @@ const App = () => {
          <Boton 
     texto="Emergencias"
     accion="emergencias"
-    estilo={{ backgroundColor: "red" , color: "black", borderRadius: "15px", width: '300px', height: "50px", fontSize: "30px", fontWeight: "bold"}}
+    estilo={{ 
+        position: "absolute", 
+        top: "1rem", 
+        right: "5rem",
+        width: "9rem",
+        height: "7rem",
+        background:"transparent",
+        backgroundImage: "url('/Img/emergenciaBTN.png')",
+        backgroundSize: "100% 100%",
+        backgroundRepeat: "no-repeat",
+        border: "none",
+        fontSize: "0",
+    }}
         /> 
     </div> 
             <Routes>

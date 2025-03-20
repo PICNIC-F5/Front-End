@@ -1,18 +1,38 @@
+:root {
+  --color-fondo-prim: rgb(44, 179, 179);
+}
+.App {
+  overflow: hidden;
+
+}
+/*HEADER*/
 .logo-container {
-  position: fixed;
-  top: 2px;
-  left: 2px;
-  z-index: 1000;
-  max-width: 25%;
-}
-
-.logo-image {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-height: 20%;
+  background-image: url(/public/Img/headerBG.png);
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.logo-image {
+  height: 10rem;
+  width: 20rem;
+  margin: 0;
 }
 
+/*MAPA*/
+.localizacion{
+  width: 100vw;
+  position: relative;
+  top: -2.5rem;
+  z-index: -1;
+}
+.localizacion img{
+  width: 100vw;
+}
+
+/*EMERGENCIAS*/
 
 
 
