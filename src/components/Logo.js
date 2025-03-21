@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Logo() {
-    return (
+const Logo = () => {
+  return (
     <div className="logo-container">
-        <img src="./Img/Logo.png" alt="Logo de PicMebyLolas" className="logo-image"/>
+      <img src="path_to_logo.png" alt="Logo" className="logo" />
     </div>
-    );
-}
+  );
+};
 
 export default Logo;

@@ -1,21 +1,13 @@
 import React from 'react';
-import { Routes, Route, useNavigate } from "react-router-dom";
-import SobreNosotros from './components/SobreNosotros';
-import Home from './components/Home';
+import { Routes, Route } from 'react-router-dom'; // Cambio aquí
+import Home from './components/Home'; // Cambié la ruta
 import Pagar from './components/Pagar';
+import SobreNosotros from ',/components/sobreNosotros';
+import Boton from './components/boton/Boton.css'; // Cambié la rut
 import Logo from './components/Logo';
-import Boton from './components/boton/Boton';
-import Carrusel from './components/carrusel/Carrusel';
+import Carrusel from ' // Cambié la ruta
 
-
-
-function App()  {
-    const navigate = useNavigate();
-
-    const volverHome = () => navigate("/home");
-    const volverInicio = () => navigate("/");
-    const sobreNosotros = () => navigate("/sobreNosotros");
-    const volverPagar = () => navigate("/pagar");
+function App() {
   return (
     
       <div className="app-container">
